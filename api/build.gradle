@@ -2,6 +2,15 @@ plugins {
     id 'application'
 }
 
+dependencies {
+    implementation project(":models")
+    implementation project(":services")
+
+    implementation group: 'io.javalin', name: 'javalin', version: '4.6.4'
+    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.13.3'
+    implementation group: 'org.slf4j', name: 'slf4j-simple', version: '1.7.36'
+}
+
 application {
     mainClass = "org.example.api.MyAPI"
 }
