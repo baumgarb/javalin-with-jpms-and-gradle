@@ -13,4 +13,5 @@ dependencies {
 
 application {
     mainClass = "org.example.api.MyAPI"
+    mainModule = "org.example.api"
 }
